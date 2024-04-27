@@ -1,0 +1,599 @@
+@font-face {
+    font-family: ment;
+    src: url(./MentiDisplay-SemiBold.ttf);
+}
+
+*{padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: ment;
+    /* background-color: black; */
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* cursor: none; */
+}
+.main{
+    background-color: black;
+}
+
+.page1{
+    
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(2, 2, 2);
+    background-image  :  url(./black\ d.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.cursor{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f7f4f4;
+    left: 0;
+    right: 0;
+    transition: .1s;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9;
+
+}
+.logo{
+    width: 140px;
+    height:90px;
+    border-radius: 35%;
+    background-image: url(./WhatsApp\ Image\ 2024-04-26\ at\ 1.57.13\ PM.jpeg);
+    border: 2px solid white;
+    background-position: center;
+    background-size: cover;
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.feedback a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    margin-left:  20px;
+    
+}
+
+.headimg{
+    overflow: hidden;
+    margin-left: 9vw;
+    position: absolute;
+    z-index: 9;
+    
+}
+.nav1{margin-top: 33px;
+    width: 100vw;
+    height: 12vh;
+    background-color: #add8e600;
+    overflow: hidden;
+}
+.nav .feedback{
+    border: 2px solid white;
+    border-radius: 200px;
+    padding: 20px;
+    
+}
+.nav{cursor: pointer;
+    width: 100vw;
+    height: 12vh;
+    color: white;
+    margin-left: 350px;
+    overflow: hidden;
+    font-family: ment;
+    font-weight: 800;
+    font-size: 35px;
+    background-color: hsla(195, 53%, 79%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    animation: lineani;
+    animation-duration: 2s;
+} 
+.nav::after{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 6px;
+     bottom: 0;
+     /* background-color: #dadada; */
+     left: 380px;
+
+
+
+}
+
+.page2{
+    height: 130vh;
+    width: 100vw;
+    background-color: rgb(2, 2, 2);
+    background-image  :  url(cat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.page2-heading{
+    overflow: hidden;
+    font-size: 2vw;
+    font-family: ment;
+    font-weight: 300;
+    margin-left: 25%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 50vw;
+    height: 10vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid whitesmoke;
+    border-radius: 35px;
+}
+.page2-heading p span{
+    color: rgb(210, 96, 96);
+}
+
+.page2-content p {
+    margin-top: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: 100;
+    font-family: ment;
+    height: 9vh;
+    width: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.page2-content span{
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    margin-top: 5vh;
+    width: 800px;
+    font-size: 9vh;
+    font-weight: 900;
+    color: rgb(29, 195, 210);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: ment;
+    overflow: hidden;
+   
+}
+ 
+.page3{
+    background-color: black;
+    height: 140vh;
+    width: 100vw;
+    color: azure;
+    position: relative;
+
+}
+.heading-3{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    font-size: 4vh;
+}
+.infomation-3{
+     position: absolute;
+     top: 50%;
+     width: 75%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-size: 2.5vw;
+     line-height: 1.;
+     z-index: 2;
+    
+     
+}
+.infomation-3>p>a{ 
+    
+    color: aquamarine;
+    
+}
+
+.image1,.image2,.image3{
+    height: 300px;
+    width: 190px;
+    border-radius: 10%;
+}
+.image1{
+    background-image: url(./colin-white-I4CzdCGb004-unsplash.jpg);
+    filter: blur(1px);
+    background-position: center;
+    background-size: cover;
+    left: 85%;
+    position: absolute;
+    transition: .8s;
+    
+}
+.image2{
+    background-image: url(./lance-reis-hZgs5xIL318-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 2%;
+    top: 50%;
+    position: absolute;
+    transition: .8s;
+    
+}
+
+
+/* newaddinion */
+.main2{
+    height: 100vh;
+    width: 100vw;
+    
+    background-color: rgb(0, 0, 0);
+}
+
+.container2{
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    background-image:  url(./dark-animals-ct2flxim2ra6zb92.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    zoom: 10vw;
+}
+.search2{
+    overflow: hidden;
+ width: 100%;
+ height: 100px;
+ max-width: 700px;
+ background: rgba(255, 255, 255, 0.2);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 65px;
+ padding: 10px 20px;
+ backdrop-filter: blur(4px) saturate(180%) ;
+}
+.search2 input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 30px;
+    font-size:25px;
+    color: rgb(255, 255, 255);
+    
+}
+ ::placeholder{
+    
+    color: rgba(255, 255, 255, 0.989);
+}
+
+
+/* newadd */
+.articles{
+    position: absolute;
+    left: 50%;
+    top: 98%;
+    transform: translate(-50%,-50%);
+    font-size: 3vw;
+}
+.page3_5{background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.database{
+    color: #f7f4f4;
+    background-color: black;
+}
+.database a{ font-size: 30px;
+    padding: 2px;
+    border-radius: 30px;
+    background-color: rgb(248, 246, 246);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+/* .container{
+    width: 100vw;
+    height: 100vh;
+    padding: 5%;
+    background-image: url(./rabbit2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(225, 225, 225, 0.2);
+    display: flex;
+    align-items: center;
+     justify-content: center;
+   border-radius: 60px;
+   padding: 10px 20px;
+   backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder{
+    color: #cac7ff;   
+}
+
+.search-bar button image{
+    width: 25px;
+} */
+
+/* @keyframes lineani {
+
+    0%{
+        width:0;
+
+    }
+    50%{
+        width:100%;
+        
+    }
+    100%{
+        width: 100%;
+        
+    }
+
+
+} */
+
+.page4{
+   height: 100vh;
+   width: 100vw;
+   background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+.box1, .box2, .box3{
+  height: 450px;
+  width: 350px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20%;
+}
+
+/* .box1{
+    background-image: url(./black\ d.jpg);
+} */
+
+.box1,.box2,.box3{
+    overflow: hidden;
+}
+.box1 img{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+    transition: .8s;
+    }
+
+.box2 img{
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        object-fit: cover;
+        transition: .8s;
+}
+
+.box3 img{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+    transition: .8s;
+    }
+
+
+.box1 img:hover{
+  transform: scale(1.3) rotate(3deg) ;
+}   
+.box2 img:hover{
+    transform: scale(1.3) rotate(3deg) ;
+  }   
+.box3 img:hover{
+    transform: scale(1.3) rotate(3deg) ;
+  }     
+  
+.page5{
+    width: 100%;
+    top: 0%;
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    
+}
+.page5 .head1{
+    width: 30%;
+    left: 4.5%;
+    color: aliceblue;
+    position: absolute;
+    padding: 10px 30px;
+}
+.page5 .head2{
+    width: 30%;
+    left: 37%;
+    position: absolute;
+    padding :10px 30px ;
+    color: aliceblue;
+}
+.page5 .head3{
+    width: 30%;
+    left: 68%;
+    position: absolute;
+    color: aliceblue;
+    padding :10px 30px ;
+}
+
+.page6{
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center; gap: 2vw;
+}
+.box{color: azure;
+    font-size: 1.5vw;
+    left: 2%;
+    padding: 1px 8px;
+    border-right: .2px solid rgb(255, 255, 255);
+}
+.page7{
+    font-size: 1vw;
+    background-color: black;
+    color: white;
+    
+}
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page8{
+   background-color: black;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+.head8
+{color: #ffffff;
+    width: fit-content;
+    top: 15%;
+    left: 40%;
+    right: 40%;
+    position: absolute;
+}
+
+.memeber1{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    top: 39%;
+    left: 3%;
+    background-color: aqua;
+    position: absolute;
+    background-image: url(./WhatsApp\ Image\ 2024-02-29\ at\ 4.52.04\ PM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+  
+
+.memeber2{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    top: 39%;
+    left: 28%;
+    background-color: aqua;
+    position: absolute;
+    background: url(./WhatsApp\ Image\ 2024-02-29\ at\ 4.52.03\ PM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.memeber3{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    top: 39%;
+    left: 52%;
+    background-image: url(./img3.jpeg);
+    background-color: aqua;
+    position: absolute; 
+    background-size: cover;
+    background-position: center;
+}
+.memeber4{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    top: 39%;
+    left: 76%;
+    background-image: url(img4.jpg);
+    background-color: aqua;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.page85{
+    height: 50vh;
+    width:100%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    text-decoration: none;
+}
+.page85>.name1 a{
+    position: absolute;
+    width: 25%;
+    left: 2.9%;
+    text-decoration: none;
+    color: white;
+}
+.page85>.name2 a{
+    position: absolute;
+    width: 25%;
+    left: 30%;
+    text-decoration: none;
+    color: white;
+}
+.page85>.name3 a{
+    position: absolute;
+    width: 25%;
+    left:55%;
+    text-decoration: none;
+    color: white;
+}
+.page85>.name4 a{
+    position: absolute;
+    width: 25%;
+    left: 78%;
+    text-decoration: none;
+    color: white;
+}
